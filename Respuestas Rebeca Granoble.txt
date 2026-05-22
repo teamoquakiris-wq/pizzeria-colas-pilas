@@ -1,0 +1,25 @@
+Preguntas de Comprensión 
+¿Por qué un sistema de delivery usa Queue para los pedidos pero Stack para la bitácora? ¿Qué problema surgiría si invertimos las estructuras?.
+
+El Queue en este caso se aplica como una fila de pedidos la cual se encarga de se atienden por orden de llegada. Por otro lado,
+el stack que en este caso actua como una bitácora de acciones (como un historial) se refiere a que el último click es el primero que se revierte. Con estos dos puntos 
+desglosados podemos concluir que, este orden esta asignado de esta forma ya que al ser invertido afectaria la estructura de entrada y salida de los pedidos, 
+si el Queue fuera aplicado en la bitacora no se guardaria como historial las acciones realizadas por otra parte si el Stack se aplicara para los pedidos estaria 
+amontonando los pedidos sin tener un verdadero control ya que el ultimo pedido que habria seria el primero en salir, si se utilizaran de forma invertida excistiria una
+incosistencia en el sistema,no serian nada eficientes y mucho menos se le estaria dando su utilidad adecuada.
+
+
+¿Por qué es obligatorio verificar Count == 0 antes de Dequeue() o Pop()? ¿Qué ocurre en ejecución si se omite?
+
+Esto se utiliza para validad que si exista algun elemento, de no hacerse mostrara una advertencia de que no podra ser ejecutada la accion. 
+
+En el método Deshacer, ¿Por qué es necesario analizar el texto con .StartsWith() antes de revertir? ¿Qué error lógico evitaría esto?
+
+Se utiliza para saber exactamente qué revertir, en este caso seria para revertir los pedidos y entregas que fueron realizadas. De no ser utilizado podria presentar 
+errores al elegir que sera removido dentro del sistema del delivery.
+
+
+¿Qué ventaja tiene entregar mediante Fork + Pull Request en lugar de un archivo comprimido? ¿Cómo facilita a la retroalimentación?
+
+Tenemos como ventaja el utilizar una herramienta tan importante como lo es githup en nuestro campo la cual nos facilita al adaptarnos a todas las utilidades que tiene,
+para beneficiarnos como usuarios y futuros trabajadores, nos hace mas competentes y eficientes al compartir los codigos con los demas.
